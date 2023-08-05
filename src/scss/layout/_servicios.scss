@@ -1,0 +1,50 @@
+@use 'base/variable' as v;
+
+.servicios{
+    h3{
+        text-align: center;
+        margin-top: 5rem;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+}
+.content-iconos{
+    display: flex;
+    justify-content: space-between;
+    
+    .icon1,
+    .icon2, 
+    .icon3{  
+        &:before{
+            content: " ";
+            display: block;
+            width: 20rem;
+            height: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+           
+            
+            
+            }
+        }
+    p{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+.disponibles .icon1:before{
+    background-image: url(../img/iconos/24-7.png);
+    
+    
+}
+.agiles .icon2:before{
+    background-image: url(../img/iconos/entrega-agil.png);
+    
+}
+.segura .icon3:before{
+    background-image: url(../img/iconos/segura.png);
+    
+}
+

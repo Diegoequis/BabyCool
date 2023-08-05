@@ -1,0 +1,16 @@
+@use 'base/variable' as v;
+
+
+header{
+    background-color: v.$Negro;
+    padding: 2rem;
+    .logo{
+        text-align: center;
+       color: v.$Blanco;
+       margin: 0;
+       font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+    }
+}

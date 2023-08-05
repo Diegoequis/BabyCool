@@ -1,0 +1,39 @@
+@use 'base/variable' as v;
+@use 'base/mixins' as m;
+
+.nav{
+    background-color: v.$verde-claro;
+
+    .navegacion-principal{
+        display: flex;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        justify-content: space-between;
+        flex-direction: column;
+        
+        
+        
+        @include m.tablet {
+            display: flex;
+            flex-direction: row;
+        }
+               
+    }
+}
+   
+a{
+    padding: 2rem 5rem;
+    color: v.$Negro;
+    text-align: center;
+    border-bottom: 1px solid #c2bfbf;
+    @include m.tablet {
+        border: none;
+    }
+    &:hover{
+        background-color: v.$verde-fuerte;
+        color: v.$Blanco;
+    }
+}
+
+ 
